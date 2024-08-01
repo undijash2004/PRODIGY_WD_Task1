@@ -1,0 +1,68 @@
+/* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Menu */
+#navbar {
+    position: fixed;
+    width: 100%;
+    background: rgba(0, 0, 255, 0.8); /* Blue gradient background */
+    color: white;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    transition: background 0.3s ease;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: color 0.3s ease;
+}
+
+/* Change color on hover */
+#navbar a:hover {
+    color: #ff0; /* Yellow color on hover */
+}
+
+/* Section styling */
+.section {
+    padding: 60px 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #navbar ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #navbar li {
+        margin: 10px 0;
+    }
+}
